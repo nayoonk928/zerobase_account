@@ -1,8 +1,12 @@
 package com.example.account.domain;
 
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
@@ -13,6 +17,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 @Entity
+@EntityListeners(AuditingEntityListener.class)
 public class AccountUser {
     @Id
     @GeneratedValue
@@ -20,6 +25,8 @@ public class AccountUser {
 
     private String name;
 
+    @CreatedDate
     private LocalDateTime createdAt;
-    private LocalDateTime updateAt;
+    @LastModifiedDate
+    private LocalDateTime updatedAt;
 }
