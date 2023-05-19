@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TransactionControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TransactionControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.account.controller.html">com.example.account.controller</a> &gt; TransactionControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.031s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">successCancelBalance()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">successUseBalance()</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-05-20 00:02:58.610  INFO 7216 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.account.controller.TransactionControllerTest], using SpringBootContextLoader
+2023-05-20 00:02:58.611  INFO 7216 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.account.controller.TransactionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-20 00:02:58.611  INFO 7216 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.account.controller.TransactionControllerTest]: TransactionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-20 00:02:58.616  INFO 7216 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.account.AccountApplication for test class com.example.account.controller.TransactionControllerTest
+2023-05-20 00:02:58.617  INFO 7216 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-20 00:02:58.617  INFO 7216 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3c5d60db, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@515b7335, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@102dff25, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@216de23a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@76e10574, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c290246, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3021e31, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4d305059, org.springframework.test.context.event.EventPublishingTestExecutionListener@3304362e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@78b293a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@146b4c6c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b166420, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@49318c2a, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@17adbecf, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@59eb987a]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.11)
+
+2023-05-20 00:02:58.645  INFO 7216 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Starting TransactionControllerTest using Java 11.0.18 on DESKTOP-NS51B2D with PID 7216 (started by nayoo in C:\Users\nayoo\제로베이스 과제\Account)
+2023-05-20 00:02:58.645  INFO 7216 --- [    Test worker] c.e.a.c.TransactionControllerTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-05-20 00:02:59.145  INFO 7216 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-20 00:02:59.145  INFO 7216 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-20 00:02:59.145  INFO 7216 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-05-20 00:02:59.156  INFO 7216 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Started TransactionControllerTest in 0.538 seconds (JVM running for 7.665)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /transaction/use
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;55&quot;]
+             Body = {&quot;userId&quot;:1,&quot;accountNumber&quot;:&quot;2000000000&quot;,&quot;amount&quot;:3000}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.account.controller.TransactionController
+           Method = com.example.account.controller.TransactionController#useBalance(Request)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionId&quot;,&quot;amount&quot;:12345,&quot;transactedAt&quot;:&quot;2023-05-20T00:02:59.1617764&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /transaction/cancel
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;76&quot;]
+             Body = {&quot;transactionId&quot;:&quot;transactionId&quot;,&quot;accountNumber&quot;:&quot;2000000000&quot;,&quot;amount&quot;:3000}
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.account.controller.TransactionController
+           Method = com.example.account.controller.TransactionController#cancelBalance(Request)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionIdForCancel&quot;,&quot;amount&quot;:54321,&quot;transactedAt&quot;:&quot;2023-05-20T00:02:59.183718&quot;}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2023. 5. 20. 오전 12:02:59</p>
+</div>
+</div>
+</body>
+</html>
