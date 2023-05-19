@@ -3,6 +3,7 @@ package com.example.account.service;
 import com.example.account.domain.Account;
 import com.example.account.domain.AccountUser;
 import com.example.account.domain.Transaction;
+import com.example.account.dto.QueryTransactionResponse;
 import com.example.account.dto.TransactionDto;
 import com.example.account.exception.AccountException;
 import com.example.account.repository.AccountRepository;
@@ -135,5 +136,11 @@ public class TransactionService {
                 .orElseThrow(() -> new AccountException((ACCOUNT_NOT_FOUND)));
 
         savedAndTransaction(CANCEL, F, account, amount);
+    }
+
+    public TransactionDto queryTransaction(String transactionId) {
+        return TransactionDto.fromEntity(transactionRepository.findByTransactionId(transactionId)
+                .orElseThrow(() -> new AccountException(TRANSACTION_NOT_FOUND))
+        );
     }
 }
