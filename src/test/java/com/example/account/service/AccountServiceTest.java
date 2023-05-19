@@ -211,7 +211,7 @@ class AccountServiceTest {
                 () -> accountService.deleteAccount(1L, "1234567890"));
 
         //then
-        assertEquals(ErrorCode.USER_ACCOUNT_UNMATCH, exception.getErrorCode());
+        assertEquals(ErrorCode.USER_ACCOUNT_UN_MATCH, exception.getErrorCode());
     }
 
     @Test

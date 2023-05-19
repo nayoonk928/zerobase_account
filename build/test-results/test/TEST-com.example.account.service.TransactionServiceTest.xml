@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.account.service.TransactionServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-19T08:43:18" hostname="DESKTOP-NS51B2D" time="0.741">
+  <properties/>
+  <testcase name="실패 트랜잭션 저장 성공" classname="com.example.account.service.TransactionServiceTest" time="0.741"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
