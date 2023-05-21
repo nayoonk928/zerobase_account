@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.account.service.LockServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-21T15:35:31" hostname="DESKTOP-NS51B2D" time="0.049">
-  <properties/>
-  <testcase name="failGetLock()" classname="com.example.account.service.LockServiceTest" time="0.047"/>
-  <testcase name="successGetLock()" classname="com.example.account.service.LockServiceTest" time="0.002"/>
-  <system-out><![CDATA[2023-05-22 00:35:31.098 ERROR 35596 --- [    Test worker] com.example.account.service.LockService  : =====Lock acquisition failed=====
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
