@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.057s</div>
+<div class="counter">6.051s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">successCancelBalance()</td>
-<td class="success">0.009s</td>
+<td class="success">3.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@
 </tr>
 <tr>
 <td class="success">successUseBalance()</td>
-<td class="success">3.039s</td>
+<td class="success">3.031s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,12 +97,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-05-21 13:05:27.106  INFO 25644 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.account.controller.TransactionControllerTest], using SpringBootContextLoader
-2023-05-21 13:05:27.107  INFO 25644 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.account.controller.TransactionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-05-21 13:05:27.107  INFO 25644 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.account.controller.TransactionControllerTest]: TransactionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-05-21 13:05:27.111  INFO 25644 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.account.AccountApplication for test class com.example.account.controller.TransactionControllerTest
-2023-05-21 13:05:27.112  INFO 25644 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2023-05-21 13:05:27.112  INFO 25644 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2fbbdca, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@722a2ba2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@788cb7b0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3e711e84, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@61bbe16d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@426fb1c3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5fc3bf09, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@69f01f4b, org.springframework.test.context.event.EventPublishingTestExecutionListener@577e2b91, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@68a06914, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2a59a8fe, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@43baf0b9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@653e79fc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@ebd4486, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@69c413f7]
+<pre>2023-05-22 00:35:24.323  INFO 35596 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.account.controller.TransactionControllerTest], using SpringBootContextLoader
+2023-05-22 00:35:24.324  INFO 35596 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.account.controller.TransactionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-05-22 00:35:24.324  INFO 35596 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.account.controller.TransactionControllerTest]: TransactionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-22 00:35:24.328  INFO 35596 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.account.AccountApplication for test class com.example.account.controller.TransactionControllerTest
+2023-05-22 00:35:24.329  INFO 35596 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-05-22 00:35:24.329  INFO 35596 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5fc3bf09, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@69f01f4b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@577e2b91, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@68a06914, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2a59a8fe, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43baf0b9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@653e79fc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ebd4486, org.springframework.test.context.event.EventPublishingTestExecutionListener@69c413f7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7d6f094e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6b886e86, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f758e05, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@46e77fb7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@43c73b5c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6b1381fc]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -112,12 +112,12 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::               (v2.7.11)
 
-2023-05-21 13:05:27.140  INFO 25644 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Starting TransactionControllerTest using Java 11.0.18 on DESKTOP-NS51B2D with PID 25644 (started by nayoo in C:\Users\nayoo\제로베이스 과제\Account)
-2023-05-21 13:05:27.141  INFO 25644 --- [    Test worker] c.e.a.c.TransactionControllerTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-05-21 13:05:27.578  INFO 25644 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-05-21 13:05:27.578  INFO 25644 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-05-21 13:05:27.578  INFO 25644 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2023-05-21 13:05:27.590  INFO 25644 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Started TransactionControllerTest in 0.475 seconds (JVM running for 9.796)
+2023-05-22 00:35:24.369  INFO 35596 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Starting TransactionControllerTest using Java 11.0.18 on DESKTOP-NS51B2D with PID 35596 (started by nayoo in C:\Users\nayoo\제로베이스 과제\Account)
+2023-05-22 00:35:24.369  INFO 35596 --- [    Test worker] c.e.a.c.TransactionControllerTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-05-22 00:35:24.862  INFO 35596 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-22 00:35:24.862  INFO 35596 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-22 00:35:24.862  INFO 35596 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-05-22 00:35:24.871  INFO 35596 --- [    Test worker] c.e.a.c.TransactionControllerTest        : Started TransactionControllerTest in 0.539 seconds (JVM running for 9.401)
 
 MockHttpServletRequest:
       HTTP Method = POST
@@ -151,7 +151,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:&quot;application/json&quot;]
      Content type = application/json
-             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionId&quot;,&quot;amount&quot;:12345,&quot;transactedAt&quot;:&quot;2023-05-21T13:05:27.5950509&quot;}
+             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionId&quot;,&quot;amount&quot;:12345,&quot;transactedAt&quot;:&quot;2023-05-22T00:35:24.8756622&quot;}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -188,7 +188,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:&quot;application/json&quot;]
      Content type = application/json
-             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionType&quot;:&quot;USE&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionIdForCancel&quot;,&quot;amount&quot;:54321,&quot;transactedAt&quot;:&quot;2023-05-21T13:05:30.6333341&quot;}
+             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionType&quot;:&quot;USE&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionIdForCancel&quot;,&quot;amount&quot;:54321,&quot;transactedAt&quot;:&quot;2023-05-22T00:35:27.9068943&quot;}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -225,7 +225,7 @@ MockHttpServletResponse:
     Error message = null
           Headers = [Content-Type:&quot;application/json&quot;]
      Content type = application/json
-             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionIdForCancel&quot;,&quot;amount&quot;:54321,&quot;transactedAt&quot;:&quot;2023-05-21T13:05:30.6438139&quot;}
+             Body = {&quot;accountNumber&quot;:&quot;1000000000&quot;,&quot;transactionResult&quot;:&quot;S&quot;,&quot;transactionId&quot;:&quot;transactionIdForCancel&quot;,&quot;amount&quot;:54321,&quot;transactedAt&quot;:&quot;2023-05-22T00:35:27.9168651&quot;}
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
@@ -240,7 +240,7 @@ MockHttpServletResponse:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2023. 5. 21. 오후 1:05:31</p>
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2023. 5. 22. 오전 12:35:31</p>
 </div>
 </div>
 </body>

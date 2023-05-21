@@ -7,7 +7,6 @@ import com.example.account.exception.AccountException;
 import com.example.account.repository.AccountRepository;
 import com.example.account.repository.AccountUserRepository;
 import com.example.account.type.AccountStatus;
-import com.example.account.type.ErrorCode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +14,7 @@ import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 import static com.example.account.type.AccountStatus.IN_USE;
@@ -38,9 +38,18 @@ public class AccountService {
         validateCreateAccount(accountUser);
 
         // 가장 최근에 생성된 계좌 정보 가져오기
-        String newAccountNumber = accountRepository.findFirstByOrderByIdDesc()
-                .map(account -> (Integer.parseInt(account.getAccountNumber())) + 1 + "")
-                .orElse("1000000000");
+        String newAccountNumber;
+
+        // 계좌번호 중복 확인
+        boolean isDuplicate;
+        do {
+            // 랜덤한 10자리 정수 생성
+            Random random = new Random();
+            newAccountNumber = String.format("%010d", random.nextInt(1000000000));
+
+            // 같은 계좌번호가 있는지 확인
+            isDuplicate = accountRepository.existsByAccountNumber(newAccountNumber);
+        } while (isDuplicate);
 
         return AccountDto.fromEntity(
             accountRepository.save(Account.builder()
@@ -55,7 +64,7 @@ public class AccountService {
 
     private void validateCreateAccount(AccountUser accountUser) {
         if (accountRepository.countByAccountUser(accountUser) >= 10) {
-            throw new AccountException(ErrorCode.MAX_ACCOUNT_PER_USER_10);
+            throw new AccountException(MAX_ACCOUNT_PER_USER_10);
         }
     }
 
@@ -64,8 +73,10 @@ public class AccountService {
         if (id < 0) {
             throw new RuntimeException("Minus");
         }
+
         return accountRepository.findById(id).get();
     }
+
 
     @Transactional
     public AccountDto deleteAccount(Long userId, String accountNumber) {

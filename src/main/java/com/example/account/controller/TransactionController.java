@@ -52,8 +52,9 @@ public class TransactionController {
     @AccountLock
     public CancelBalance.Response cancelBalance(
             @Valid @RequestBody CancelBalance.Request request
-    ) {
+    ) throws InterruptedException {
         try {
+            Thread.sleep(3000L);
             return CancelBalance.Response.from(
                     transactionService.cancelBalance(request.getTransactionId(),
                             request.getAccountNumber(), request.getAmount())
