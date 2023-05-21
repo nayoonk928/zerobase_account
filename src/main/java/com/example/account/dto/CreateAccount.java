@@ -10,7 +10,7 @@ public class CreateAccount {
     @Getter
     @Setter
     @AllArgsConstructor
-    public static class Request {
+    public static class Request{
         @NotNull
         @Min(1)
         private Long userId;
