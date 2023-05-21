@@ -8,7 +8,7 @@ Language: Java
 
 Tools: IntelliJ
 
-Framework/Library: Spring boot
+Framework/Library: Spring boot 2.7.11
 
 DataBase: H2 DB
 
